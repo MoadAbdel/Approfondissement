@@ -10,7 +10,6 @@ class Settings extends Model
     protected $fillable = [
         'theme',
         'lang',
-        'user_id',
     ];
 
     public function user(): BelongsTo
