@@ -20,6 +20,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
 
             $table->primary(['group_id', 'user_id']);
+            $table->timestamps();
         });
     }
 
