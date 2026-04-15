@@ -6,6 +6,8 @@ use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Database\Seeders\SettingsSeeder;
+use Database\Seeders\ProductOrderSeeder;
+use Database\Seeders\SubscriptionOrderSeeder;
 use Database\Seeders\OrderSeeder;
 use Database\Seeders\GroupUserSeeder;
 
@@ -27,6 +29,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             SettingsSeeder::class,
+            ProductOrderSeeder::class,
+            SubscriptionOrderSeeder::class,
             OrderSeeder::class,
             GroupUserSeeder::class,
         ]);
